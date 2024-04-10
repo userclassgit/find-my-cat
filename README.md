@@ -1,3 +1,3 @@
-# **Project Name**
+# **FindMyCat**
 
-Click [here](https://) to check out the demo.
+Click [here] (https://userclassgit.github.io/find-my-cat/) to check out the demo.
