@@ -1,8 +1,11 @@
 @charset "utf-8";
 
-/* :root {
-
-} */
+:root {
+  --dark: #6B6064;
+  --light: #FDFAF6;
+  --orange: #F5854F;
+  --vertical-spacing: 4.5rem;
+}
 
 .container {
     width: min(100% - 30px, 1080px);
@@ -36,13 +39,15 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", "Roboto", sans-serif;
+  color: var(--light);
   height: 100vh;
+  background-color: var(--light);
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--light);
 }
 
 /* ========================Header======================== */
@@ -51,6 +56,7 @@ header {
   position: relative;
   width: 100%;
   height: 100vh;
+  margin-bottom: var(--vertical-spacing);
 }
 
 .video-background {
@@ -131,7 +137,11 @@ nav ul li+li {
   z-index: 9999;
 
   h1 {
-      font-size: 5.5rem;
+      font-size: 2.6rem;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 
   button {
@@ -152,21 +162,55 @@ nav ul li+li {
 /* ========================Map Section======================== */
 
 .map-section {
-  height: 40rem;
-  /* .container {
+  /* height: 40rem; */
+  color: var(--dark);
+  margin-bottom: var(--vertical-spacing);
+  .container {
+    /* gap: 10rem; */
+  }
+}
 
-  } */
+.map-top {
+  /* height: 10rem; */
+  /* justify-content: space-between; */
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .two-buttons {
+    gap: 1.5rem;
+    margin-top: var(--vertical-spacing);
+    font-size: 1rem;
+  }
+  button {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+  }
+  .two-buttons button:first-child {
+    background-color: var(--dark);
+    border: none;
+    color: var(--light);
+  }
+  .two-buttons button:nth-child(2) {
+    background-color: var(--light);
+    border: 2px solid var(--dark);
+    color: var(--dark);
+  }
 }
 
 .map-element {
   width: 100%;
   height: 30rem;
   background-color: black;
+  border-radius: 25px;
+  margin-top: 2rem;
 }
 
 /* ========================Footer======================== */
 footer {
-  height: 5.5rem;
+  height: 3rem;
   background-color: gray;
   .container {
       height: 100%;
