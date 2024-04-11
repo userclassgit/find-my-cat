@@ -289,7 +289,7 @@ nav ul li+li {
 /* ========================Footer======================== */
 footer {
   height: 3rem;
-  background-color: gray;
+  background-color: var(--dark);
   .container {
       height: 100%;
       align-items: center;
