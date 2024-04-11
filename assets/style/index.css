@@ -4,7 +4,8 @@
   --dark: #6B6064;
   --light: #FDFAF6;
   --orange: #F5854F;
-  --vertical-spacing: 4.5rem;
+  --dark-orange: #f9673e;
+  --vertical-spacing: 7rem;
   --white: #fff;
   --button-paddings: .7rem 1.5rem;
   --cat-ear-spacing: 1.4rem;
@@ -157,7 +158,7 @@ nav ul li+li {
       color: var(--light);
       &:hover {
           transition: 0.2s ease-in-out;
-          background-color: rgb(249, 103, 62);
+          background-color: var(--dark-orange);
       }
   }
 }
@@ -243,6 +244,47 @@ nav ul li+li {
   border-radius: 25px;
   margin-top: 3rem;
 }
+
+/* ========================Who are we======================== */
+
+.who-are-we-section {
+  color: var(--dark);
+  background-color: var(--white);
+  padding: var(--vertical-spacing) 0;
+  width: 100%;
+  .section-half:first-child {
+    h2 {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    p {
+      line-height: 2.8;
+    }
+    button {
+      margin-top: 1.7rem;
+      padding: var(--button-paddings);
+      border-radius: 50px;
+      border: none;
+      background-color: var(--orange);
+      color: var(--light);
+      &:hover {
+        transition: 0.2s ease-in-out;
+        background-color: var(--dark-orange);
+      }
+    }
+  }
+}
+
+.section-half {
+  width: 47%;
+}
+
+.who-are-we-img {
+  border-radius: 10px;
+  background: transparent url(/assets/media/who-are-we.jpg) no-repeat center center/cover;
+}
+
 
 /* ========================Footer======================== */
 footer {
