@@ -21,9 +21,13 @@ map.addControl(new mapboxgl.GeolocateControl({
 }));
 
 function placeMarker(location) {
-  new mapboxgl.Marker({
-    color: '#F5854F'
-  })
+  const pawPrintMarker = document.createElement('div');
+  pawPrintMarker.style.backgroundImage = 'url(./assets/media/marker.png)';
+  pawPrintMarker.style.width = '50px';
+  pawPrintMarker.style.height = '50px';
+  pawPrintMarker.style.backgroundSize = 'cover';
+
+  new mapboxgl.Marker(pawPrintMarker)
     .setLngLat(location)
     .addTo(map);
 }
