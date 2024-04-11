@@ -5,6 +5,8 @@
   --light: #FDFAF6;
   --orange: #F5854F;
   --vertical-spacing: 4.5rem;
+  --white: #fff;
+  --button-paddings: .7rem 1.5rem;
 }
 
 .container {
@@ -57,6 +59,7 @@ header {
   width: 100%;
   height: 100vh;
   margin-bottom: var(--vertical-spacing);
+  color: var(--white);
 }
 
 .video-background {
@@ -116,7 +119,7 @@ nav ul li {
 
   a:hover {
       transition: 0.2s ease-in-out;
-      color: var(--button-orange);
+      color: var(--orange);
   }
 }
 
@@ -146,15 +149,14 @@ nav ul li+li {
 
   button {
       margin-top: 1.4rem;
-      width: 15rem;
-      height: 5rem;
-      border-radius: var(--border-radius-small);
-      color: #fff;
-      background-color: var(--button-orange);
-
+      padding: var(--button-paddings);
+      border-radius: 50px;
+      border: none;
+      background-color: var(--orange);
+      color: var(--white);
       &:hover {
           transition: 0.2s ease-in-out;
-          background-color: rgb(250, 96, 53);
+          background-color: rgb(249, 103, 62);
       }
   }
 }
@@ -171,21 +173,20 @@ nav ul li+li {
 }
 
 .map-top {
-  /* height: 10rem; */
-  /* justify-content: space-between; */
   h1 {
     font-size: 2rem;
   }
   p {
     font-size: 1rem;
+    margin-top: 1rem;
   }
   .two-buttons {
     gap: 1.5rem;
-    margin-top: var(--vertical-spacing);
+    margin-top: 2rem;
     font-size: 1rem;
   }
   button {
-    padding: 1rem 2rem;
+    padding: var(--button-paddings);
     border-radius: 50px;
   }
   .two-buttons button:first-child {
@@ -205,7 +206,7 @@ nav ul li+li {
   height: 30rem;
   background-color: black;
   border-radius: 25px;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 /* ========================Footer======================== */
