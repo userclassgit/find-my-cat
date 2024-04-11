@@ -198,6 +198,12 @@ nav ul li+li {
     background-color: var(--light);
     border: 2px solid var(--dark);
     color: var(--dark);
+    transition: 0.2s ease-in-out;
+    &:hover {
+      background-color: var(--orange);
+      color: var(--white);
+      border: 2px solid var(--orange);
+    }
   }
 }
 /* cat ears */
