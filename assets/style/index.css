@@ -254,7 +254,7 @@ footer {
   }
   ul li {
       display: inline;
-      font-size: 2rem;
+      font-size: 1.7rem;
   }
   ul li + li {
       margin-left: 1.7rem;
