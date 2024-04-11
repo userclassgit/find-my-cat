@@ -60,7 +60,7 @@ header {
   width: 100%;
   height: 100vh;
   margin-bottom: var(--vertical-spacing);
-  color: var(--white);
+  color: var(--light);
 }
 
 .video-background {
@@ -154,7 +154,7 @@ nav ul li+li {
       border-radius: 50px;
       border: none;
       background-color: var(--orange);
-      color: var(--white);
+      color: var(--light);
       &:hover {
           transition: 0.2s ease-in-out;
           background-color: rgb(249, 103, 62);
@@ -201,7 +201,7 @@ nav ul li+li {
     transition: 0.2s ease-in-out;
     &:hover {
       background-color: var(--orange);
-      color: var(--white);
+      color: var(--light);
       border: 2px solid var(--orange);
     }
   }
