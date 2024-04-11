@@ -7,6 +7,7 @@
   --vertical-spacing: 4.5rem;
   --white: #fff;
   --button-paddings: .7rem 1.5rem;
+  --cat-ear-spacing: 1.4rem;
 }
 
 .container {
@@ -167,9 +168,6 @@ nav ul li+li {
   /* height: 40rem; */
   color: var(--dark);
   margin-bottom: var(--vertical-spacing);
-  .container {
-    /* gap: 10rem; */
-  }
 }
 
 .map-top {
@@ -193,6 +191,8 @@ nav ul li+li {
     background-color: var(--dark);
     border: none;
     color: var(--light);
+    transition: 0.2s ease-in-out;
+    position: relative;
   }
   .two-buttons button:nth-child(2) {
     background-color: var(--light);
@@ -200,6 +200,35 @@ nav ul li+li {
     color: var(--dark);
   }
 }
+/* cat ears */
+.two-buttons button:first-child::before,
+.two-buttons button:first-child::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--dark);
+  top: 1rem;
+  transition: 0.2s ease-in-out;
+  z-index: 3;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.two-buttons button:first-child::before {
+  left: var(--cat-ear-spacing);
+}
+
+.two-buttons button:first-child::after {
+  right: var(--cat-ear-spacing);
+}
+
+.two-buttons button:first-child:hover::before,
+.two-buttons button:first-child:hover::after {
+  top: -0.4rem;
+}
+
 
 .map-element {
   width: 100%;
